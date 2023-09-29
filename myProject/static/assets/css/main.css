@@ -315,6 +315,7 @@ section {
     display: flex;
     list-style: none;
     align-items: center;
+    text-align: center;
   }
 
   .navbar li {
@@ -475,6 +476,11 @@ section {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
   }
 
   .navbar a,
@@ -1522,6 +1528,7 @@ section {
   color: #fff;
   background: var(--color-primary);
   box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+  justify-content: center;
 }
 
 .hero .btn-book-a-table:hover {
@@ -1652,4 +1659,15 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+/* Custom CSS */
+.custom-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-nav li a{
+  justify-content: flex-end;
+  margin-left: 0px;
 }

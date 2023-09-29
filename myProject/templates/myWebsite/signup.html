@@ -24,6 +24,10 @@
                         {% csrf_token %}
                         <br>
 
+                        <label for="username">User Name</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control p-2 mb-2" id="username" name="username" required>
+                        </div>
                         <label for="email">Email</label>
                         <div class="form-group">
                             <input type="email" class="form-control p-2 mb-2" id="email" name="email" required>
@@ -42,7 +46,7 @@
 
                         <button type="submit" class="btn bg-dark text-light">Signup</button>
                         <br>
-                        Already User? <a href="{% url 'login' %}">Login</a>
+                        Already User? <a href="{% url 'handledLogin' %}">Login</a>
                     </form>
                 </div>
             </div>
